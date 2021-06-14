@@ -6,7 +6,8 @@ const noteInitialState = {
     dataEdit: {},
     notifier: false,
     notifierContent: '',
-    notifierType: ''
+    notifierType: '',
+    
 };
 const allReducers = (state=noteInitialState,action) => {
     switch (action.type) {

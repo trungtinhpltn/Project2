@@ -8,3 +8,10 @@
     position: relative;
     right: -15px;
 }
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e9ecef;
+    padding: 25px 0;
+}

@@ -4,6 +4,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import RouterURL from '../Router/RouterURL';
 import { connect } from 'react-redux';
 import Notifier from '../Notifier/Notifier';
+import Footer from '../Footer/Footer';
 class App extends Component {
   componentDidMount() {
     const navLinks = document.querySelectorAll(".nav-item");
@@ -21,6 +22,7 @@ class App extends Component {
         <Nav></Nav>
         <RouterURL></RouterURL>
         <Notifier></Notifier>
+        <Footer></Footer>
       </Router>
     );
   }
