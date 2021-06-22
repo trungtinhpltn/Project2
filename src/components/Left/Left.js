@@ -1,6 +1,6 @@
 import React, { useContext , useMemo } from 'react'
 import { Link } from 'react-router-dom';
-import { Context } from '../ContextAPI/ContextAPI';
+import { Context } from '../ContextAPI/ContextAPI.js';
 
 function Left() {
 

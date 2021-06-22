@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import {Context} from '../../ContextAPI/ContextAPI';
+import {Context} from '../../ContextAPI/ContextAPI.js';
 function CartItem({product}) {
     const {handleIsCart,handleCartQuantity} = useContext(Context);
     return (

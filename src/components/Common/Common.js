@@ -1,5 +1,5 @@
 import React,{ useContext } from 'react';
-import { Context } from '../ContextAPI/ContextAPI';
+import { Context } from '../ContextAPI/ContextAPI.js';
 import {Link, useRouteMatch} from 'react-router-dom';
 
 const stars=[1,2,3,4,5];

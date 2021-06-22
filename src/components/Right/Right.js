@@ -6,7 +6,7 @@ import {Route, Switch} from 'react-router-dom';
 import Wishlist from '../Features/Wishlist/Wishlist';
 import Checkout from '../Features/Checkout/Checkout';
 import Detail from '../Features/Details/Details';
-import { Context } from '../ContextAPI/ContextAPI';
+import { Context } from '../ContextAPI/ContextAPI.js';
 
 function Right() {
 

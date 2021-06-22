@@ -1,5 +1,5 @@
 import React,{ useContext, useEffect, useState} from 'react'
-import { Context } from '../../ContextAPI/ContextAPI';
+import { Context } from '../../ContextAPI/ContextAPI.js';
 import { Product} from '../../Common/Common';
 import Pagination from '../../Common/Pagination/Pagination';
 

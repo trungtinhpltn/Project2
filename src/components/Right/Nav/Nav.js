@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Context } from '../../ContextAPI/ContextAPI';
+import { Context } from '../../ContextAPI/ContextAPI.js';
 import { Link } from 'react-router-dom';
 import MyCart from './MyCart';
 
