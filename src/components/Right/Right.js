@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import Nav from './Nav/Nav';
-import Shop from '../Features/Shop/Shop';
+import { Shop } from '../Features/Shop/Shop';
 import { rightTitle } from '../Common/Common'; 
 import {Route, Switch} from 'react-router-dom';
 import Wishlist from '../Features/Wishlist/Wishlist';
@@ -11,18 +11,21 @@ import { Context } from '../ContextAPI/ContextAPI';
 function Right() {
 
   const {pathTitle, showMenus, setShowMenus, showFilters, setShowFilters } = useContext(Context);
-  window.onresize = ()=>{
-    let wc = window.innerWidth;
-    if(wc >= 1200){
-      setShowMenus(false);
-    }
-  }
-  useEffect(() => {
-    return () => {
+  useEffect( ()=>{
+    window.onresize = ()=>{
+      let wc = window.innerWidth;
+      if(wc >=992){
+        setShowFilters(false)
+      }
+      if(wc >= 1200){
+        setShowMenus(false);
+      }
+      
+    };
+    return ()=>{
       window.onresize=null;
     }
-  },[]);
-
+  },)
   return (
     <div className="col col-xl-10" id="right">
       <Nav/>
